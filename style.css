@@ -79,8 +79,8 @@ html, body {
   font-size: 16px;
 }
 
-.container {
-  max-width: 1100px;
+.wrapper {
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -234,6 +234,7 @@ a {
 .intro {
   margin: 50px 0 0 0;
   font-family: "Lato";
+  padding: 0 30px;
 }
 
 .intro_content {
@@ -301,6 +302,7 @@ a {
 /*********  Partners ***********/
 .parteners {
   margin: 50px 0 0 0;
+  padding: 0 10px;
 }
 
 .parterns_container {
@@ -378,6 +380,7 @@ a {
 /*********  Project  ***********/
 .projects {
   margin: 50px 0 0 0;
+  padding: 0 30px;
 }
 
 .projects_columns {
@@ -450,11 +453,20 @@ a {
   }
 }
 
-@media (max-width: 767px) {
-  body {
-    overflow-x: hidden;
+@media (max-width: 1060px) {
+  .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .projects_columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -467,12 +479,32 @@ a {
             align-items: center;
   }
   .projects_columns_column {
-    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-bottom: 20px;
-    margin-left: 30px;
+  }
+  .projects_columns_column a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projects_columns_column .projects_columns_column_text {
+    margin: 0 30px;
   }
   img {
-    width: 95%;
+    max-width: 100%;
   }
 }
 
@@ -480,6 +512,7 @@ a {
 .about {
   margin: 20px 0 0 0;
   background-color: #2e2f38;
+  padding: 0 30px;
 }
 
 .about_columns {
@@ -489,7 +522,7 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 .about_columns :nth-child(2) {
@@ -559,7 +592,7 @@ a {
 
 /*********  Contact  ***********/
 .contact {
-  padding: 60px 0;
+  padding: 60px 30px;
 }
 
 .contact_column {
