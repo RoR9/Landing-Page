@@ -377,8 +377,13 @@ a{
 }
 
 @media (max-width:767px){
+    body{
+      overflow-x: hidden;
+    }
     .projects_columns{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         
         
     }
@@ -496,6 +501,7 @@ a{
     .contact_btn{
         display: block;
     }
+    
 }
 /*********  Footer ***********/
 
