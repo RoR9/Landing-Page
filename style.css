@@ -501,10 +501,16 @@ a {
             align-items: center;
   }
   .projects_columns_column .projects_columns_column_text {
-    margin: 0 30px;
+    margin: 0px 10px;
   }
   img {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .projects_columns .projects_columns_column_text {
+    margin: 0;
   }
 }
 
@@ -577,7 +583,7 @@ a {
 
 @media (max-width: 767px) {
   .about {
-    padding: 0 20px;
+    padding: 0 0px 10px;
   }
   .about_columns {
     -webkit-box-orient: vertical;
